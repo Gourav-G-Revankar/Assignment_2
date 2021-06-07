@@ -1,0 +1,432 @@
+/*----------Requirements----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*----------navbar----------*/
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #215688;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+.menu-right {
+    float: right;
+    display: block;
+}
+
+.menu-right a {
+    color: #215688;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+/*  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }*/
+
+.topnav a.active {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.nav-underline {
+    color: #9a1d9e;
+    margin-top: 6px;
+}
+
+.nav-bar-line {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #929292;
+}
+
+/*----------banner-page----------*/
+
+.banner-page {
+    width: 100%;
+}
+
+.banner-info {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/*----------caller-section----------*/
+
+.caller-section p:first-child {
+    margin: 40px 0 20px 0;
+}
+
+.caller-section .col-2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.caller-section .col-2 h2 {
+    font-size: 60px;
+    margin: 5px 5px;
+}
+
+.caller-section .col-2 h2 span {
+    font-size: 20px;
+}
+
+.caller-section .col-2 p {
+    font-size: 14px;
+}
+
+/*----------banner-acc-section----------*/
+
+.banner-acc-section {
+    margin: 35px 0;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    border: solid 2px #cacaca;
+    width: 100%;
+    padding: 25px 20px;
+}
+
+.acc-info {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #929292;
+    margin: 0 4px 0 4px;
+}
+
+::placeholder {
+    color: #929292;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.acc-info button {
+    border: 1px solid #215688;
+    background-color: #215688;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    width: 10%;
+}
+
+/*----------recent-cases-section----------*/
+
+.recent-cases-section h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.recent-cases-section button {
+    float: right;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    border: solid 1px #cacaca;
+    color: #215688;
+    padding: 8px 35px;
+}
+
+/*----------recent-cases-users----------*/
+
+.recent-cases-users .row .col-3 .box {
+    border: solid 2px #cacaca;
+    border-radius: 5px;
+    width: 95%;
+    margin: 25px 0;
+    /*height: 360px;*/
+}
+
+.user-info {
+    background-color: #eeeeee;
+}
+
+.user-info .row .col-6 p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0 5px 10px;
+    color: #424242;
+}
+
+.user-info .row .col-6 p:last-child {
+    font-size: 16px;
+    margin: 5px 0 5px 10px;
+    color: #424242;
+}
+
+.user-info .row .col-6 img {
+    width: 60px;
+    float: right;
+    padding: 5px;
+}
+
+.blue-highlight {
+    font-size: 18px;
+    margin: 10px 0 0 10px !important;
+    padding-bottom: 10px;
+    color: #215688;
+}
+
+.bal-block {
+    padding: 20px 10px;
+}
+
+.bal-block .row .col-6:last-child {
+    text-align: right;
+}
+
+.bal-block .row .col-6 p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #424242;
+}
+
+.bal-block .row .col-6:first-child p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.update-block {
+    padding: 10px 0 10px 10px;
+}
+
+.update-block .row .col-1:first-child i {
+    color: #9a1d9e;
+    font-size: 20px;
+}
+
+.update-block .row .col-11:last-child p:first-child {
+    color: #9a1d9e;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.update-block .row .col-11:last-child p:nth-child(2) {
+    color: #424242;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.update-block .row .col-11:last-child p:last-child {
+    color: #424242;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.update-block hr {
+    color: #cacaca;
+}
+
+.box hr {
+    color: #cacaca;
+}
+
+/*.bold-rm{
+    font-weight: normal !important;
+}
+*/
+
+/*----------Media Queries----------*/
+
+@media only screen and (max-width: 1366px) {
+    .banner-info {
+        max-width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-info {
+        max-width: 98%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner-info {
+        max-width: 70%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .caller-section .col-2 h2 {
+        font-size: 40px;
+        margin: 5px 5px;
+    }
+
+    .caller-section .col-2 h2 span {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .banner-info {
+        max-width: 80%;
+    }
+
+    /*navbar*/
+
+    .topnav a {
+        padding: 10px 8px;
+        font-size: 15px;
+    }
+
+    .menu-right a {
+        padding: 10px 8px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-info {
+        max-width: 80%;
+    }
+
+    .col-s-4 {
+        width: 50%;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin: 6px;
+    }
+
+    .acc-info button {
+        margin-top: 4px;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    .banner-info {
+        max-width: 70%;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    /*navbar*/
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .menu-right a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .menu-right {
+        float: left;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-info {
+        max-width: 80%;
+    }
+}
